@@ -1,6 +1,8 @@
 # kdtree
 kdtree module for C++
 
+[![Build Status](https://travis-ci.org/questbeat/kdtree.png?branch=master)](https://travis-ci.org/questbeat/kdtree)
+
 
 ## Installation
 1. Copy `kdtree.hpp` and `node.hpp` to your project.
@@ -13,21 +15,21 @@ This module uses namespace `kdtree`.
 Write `using namespace kdtree;` if necessary.
 
 ### Classes
-* `kdtree` : A class having a pointer to a root node of the tree.
+* `kdtree` : A class having a pointer to the root node of the tree.
 * `node` : A class representing a node of the tree.
 
 ### Create a node
-Generally you don't have to create a node directly, but it might be good to know hot to create a node and access to the data.
+Generally you don't have to create a node directly, but it might be good to know how to create a node and access to its data.
 
 `node` is a template class and you can use any classes having the member `x` and `y`.  
 
     node<cv::Point> *node = new node<cv::Point>(cv::Point(10, 0));
 
-The member `point` is representing the point of the node.
+The member `point` represents the point of the node.
 
     cout << node->point << endl; // [10, 0]
 
-Read the header if you want to know about other methods and members.
+Read `node.hpp` if you want to know about other methods and member variables.
 
 ### Create a tree
 `kdtree` is a template class and you can use any classes having the member `x` and `y`.  
@@ -42,6 +44,8 @@ Following example uses `cv::Point` of OpenCV as a point of the tree.
     };
     
     kdtree<cv::Point> *tree = new kdtree<cv::Point>(points);
+
+Read `kdtree.hpp` if you want to know about other methods and member variables.
 
 ### Delete a tree
 Just `delete` the instance of the tree.
