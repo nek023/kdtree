@@ -27,8 +27,8 @@
 /* Begin PBXFileReference section */
 		AA62B8F51851D7D500D21166 /* point.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = point.hpp; sourceTree = "<group>"; };
 		AA62B8F81851E26F00D21166 /* benchmark.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = benchmark.hpp; sourceTree = "<group>"; };
-		AA774685184E225600E60A9B /* kdtree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kdtree.hpp; sourceTree = "<group>"; };
-		AA774688184E225C00E60A9B /* node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = node.hpp; sourceTree = "<group>"; };
+		AA6588161857054700F0B0A6 /* kdtree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kdtree.hpp; sourceTree = "<group>"; };
+		AA6588171857054700F0B0A6 /* node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = node.hpp; sourceTree = "<group>"; };
 		AAA028E3184E10F200976034 /* kdtree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kdtree; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA028E6184E10F200976034 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AAA028E8184E10F200976034 /* kdtree.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = kdtree.1; sourceTree = "<group>"; };
@@ -45,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA6588151857054700F0B0A6 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				AA6588161857054700F0B0A6 /* kdtree.hpp */,
+				AA6588171857054700F0B0A6 /* node.hpp */,
+			);
+			path = classes;
+			sourceTree = SOURCE_ROOT;
+		};
 		AAA028DA184E10F200976034 = {
 			isa = PBXGroup;
 			children = (
@@ -64,22 +73,13 @@
 		AAA028E5184E10F200976034 /* kdtree */ = {
 			isa = PBXGroup;
 			children = (
-				AAA028EF184E10F700976034 /* kdtree */,
+				AA6588151857054700F0B0A6 /* classes */,
 				AA62B8F51851D7D500D21166 /* point.hpp */,
 				AA62B8F81851E26F00D21166 /* benchmark.hpp */,
 				AAA028E6184E10F200976034 /* main.cpp */,
 				AAA028E8184E10F200976034 /* kdtree.1 */,
 			);
 			path = kdtree;
-			sourceTree = "<group>";
-		};
-		AAA028EF184E10F700976034 /* kdtree */ = {
-			isa = PBXGroup;
-			children = (
-				AA774685184E225600E60A9B /* kdtree.hpp */,
-				AA774688184E225C00E60A9B /* node.hpp */,
-			);
-			name = kdtree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
