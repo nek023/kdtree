@@ -1,6 +1,8 @@
 # kdtree
 kdtree module for C++
 
+[![Build Status](https://travis-ci.org/questbeat/kdtree.png?branch=master)](https://travis-ci.org/questbeat/kdtree)
+
 
 ## Installation
 1. Copy `kdtree.hpp` and `node.hpp` to your project.
