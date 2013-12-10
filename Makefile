@@ -1,7 +1,7 @@
 PRODUCT_NAME=kdtree.out
 
 build:
-	$(CXX) -std=c++11 -o $(PRODUCT_NAM) kdtree/main.cpp
+	$(CXX) -std=c++11 -o $(PRODUCT_NAME) kdtree/main.cpp
 
 run: build
 	./$(PRODUCT_NAME)
